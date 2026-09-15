@@ -1,0 +1,13 @@
+# Material oficial del ISTQB: con copyright, no se redistribuye.
+# Se descarga desde https://www.istqb.org
+*.pdf
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+
+# Editores
+.vscode/
+.idea/
+*.swp
+*~
