@@ -18,6 +18,8 @@ Complemento del plan de estudio. Aquí van los conceptos que pedí aclarar apart
 6. [Tests wear out vs regresión automatizada](#6-tests-wear-out-vs-regresión-automatizada)
 7. [Los dos principios que se confunden](#7-los-dos-principios-que-se-confunden)
 8. [La frontera analysis / design / implementation](#8-la-frontera-analysis--design--implementation)
+9. [Traceability](#9-traceability)
+10. [Los dos roles](#10-los-dos-roles)
 
 ---
 
@@ -278,6 +280,103 @@ Defects típicos del test basis: **ambigüedades, contradicciones, omisiones, in
 **Trampa:** "preparar datos de prueba" suena a una sola cosa y son dos, repartidas en dos actividades distintas.
 
 Secciones 1.4.1, 1.4.3
+
+---
+
+## 9. Traceability
+
+**Duda:** qué es exactamente y por qué esos seis beneficios.
+
+**La clave:** es un **enlace registrado** entre cada elemento del test basis y los productos de prueba que salen de él.
+
+```
+requisito → test condition → test case → resultado → defect
+```
+
+**Lo que organiza toda la lista de beneficios: los enlaces se recorren en dos direcciones.**
+
+- **Hacia delante** (basis → pruebas): *"El requisito 4.2, ¿qué casos lo cubren?"*
+- **Hacia atrás** (pruebas → basis): *"Este caso ha fallado, ¿a qué requisito afecta?"*
+
+### Los seis beneficios, con su escenario
+
+| Beneficio | Qué permite decir |
+|---|---|
+| **Evaluar cobertura** | No "hemos ejecutado 400 pruebas" (no significa nada), sino "el requisito 7.3 no tiene ninguna prueba". Detecta **huecos** (requisitos sin pruebas) y **pruebas huérfanas** (casos que no trazan a nada → obsoletos) |
+| **Análisis de impacto** | Cambia un requisito: consultas qué casos descienden de él y reejecutas **esos**. Es lo que convierte la **selección de regresión** en decisión informada en vez de intuición |
+| **Auditabilidad / gobierno de TI** | Sectores regulados (médico, aviación, banca, automoción). El auditor pide: *"demuéstreme que el requisito SR-114 fue probado"*. Sin trazabilidad no se puede certificar |
+| **Comprensión de informes** | No "el 85% de las pruebas pasan", sino "pagos al 100% de requisitos verificados, informes al 40%". Informar **por elemento del test basis**, no por recuento de pruebas |
+| **Traducir a stakeholders** | No "ha fallado la suite TS-042", sino "los clientes no pueden aplicar códigos de descuento". Es la capa de traducción |
+| **Evaluar calidad y progreso** | Qué requisitos generan más defects → calidad de producto. En qué fase se introdujeron → calidad de proceso. Objetivos verificados vs pendientes → progreso |
+
+**En una frase:** la trazabilidad separa *haber hecho testing* de *poder demostrar qué se probó y por qué*.
+
+**Trampa:** permite **evaluar** la cobertura, no la **garantiza**. Y no sustituye a los exit criteria.
+
+Sección 1.4.4
+
+---
+
+## 10. Los dos roles
+
+**Duda:** cómo se reparten las actividades y por qué la frontera cae donde cae.
+
+**La clave:** el syllabus habla de **roles, no de puestos de trabajo**. Una persona no "es test manager": **desempeña** el test management role.
+
+Consecuencias que se preguntan:
+- Una persona puede asumir **los dos roles** a la vez.
+- Un rol puede **repartirse** entre varias personas.
+- **No implica jerarquía.** El test management role no es "el jefe de los testers".
+
+### Por qué la frontera no es arbitraria
+
+| Rol | Actividades | Qué tienen en común |
+|---|---|---|
+| **Test management** | Planning · Monitoring & control · Completion | Decisiones sobre **alcance, recursos y cierre**. Comprometen a la organización |
+| **Testing** | Analysis · Design · Implementation · Execution | **Oficio técnico**: derivar, diseñar, construir, ejecutar |
+
+La gestión se queda con los extremos (abrir y cerrar) más la vigilancia continua del medio.
+
+### La regla de los dos pasos
+
+**Nunca vayas del verbo al rol.** El sonido cotidiano de los verbos está **invertido** respecto al mapeo ISTQB:
+
+- *"Organizar"* suena a gestión → es **implementation**
+- *"Valorar"* suena a evaluación de jefe → es **analysis**
+- *"Tomar acciones correctivas"* suena operativo → es **gestión**
+
+Pasa siempre por la actividad intermedia:
+
+```
+Paso 1: ¿a qué ACTIVIDAD pertenece esta tarea? (de las siete)
+Paso 2: ¿a qué ROL pertenece esa actividad?
+```
+
+Con el paso intermedio el verbo deja de importar.
+
+**Anclas de palabra:** *corrective action* + *objectives of the test plan* = test control = management.
+
+### Mapeo de tareas (así se pregunta)
+
+| Tarea | Rol |
+|---|---|
+| Redactar el test plan | Management |
+| Evaluar los exit criteria | Management |
+| Tomar acciones correctivas para cumplir el plan | Management |
+| Comunicar el test completion report | Management |
+| Valorar la testability del test object | Testing |
+| Identificar y priorizar test conditions | Testing |
+| Identificar coverage items | Testing |
+| Organizar test cases en test suites | Testing |
+| Ejecutar y comparar resultados | Testing |
+
+### El matiz ágil
+
+Dentro del equipo el rol **se diluye**: el propio equipo absorbe buena parte de las tareas de gestión, siguiendo el *whole team approach*.
+
+Por encima del equipo **se concentra**: para actividades que abarcan varios equipos sigue habiendo test managers **fuera** del equipo (entornos compartidos, estrategia de prueba organizacional, mejora del proceso entre equipos).
+
+Sección 1.4.5 · **Fallado en el test del bloque B**
 
 ---
 

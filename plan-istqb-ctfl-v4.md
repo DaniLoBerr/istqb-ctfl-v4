@@ -41,6 +41,42 @@ ISTQB presupuesta 1 minuto por pregunta K1/K2 y 3 minutos por pregunta K3: 56 mi
 
 ---
 
+## Criterio de listo — cuándo presentarse
+
+**El contador de tareas no es el criterio.** Mide recorrido, no preparación. Y no es fijo: las consolidaciones que no alcanzan su mínimo se repiten, así que 43 es un suelo, no un total.
+
+El punto de decisión es la **tarea 5.6**, tres tareas antes del final, para que quede margen entre decidir y examinarse. Se presenta cuando se cumplen las **cinco** señales:
+
+| | Señal | Por qué |
+|---|---|---|
+| 1 | **Simulacro D ≥ 33/40**, y el C no por debajo de 30 | Dos resultados consistentes, no una pasada afortunada |
+| 2 | **Las 8 preguntas K3 resueltas dentro de su tiempo** | Acertar la teoría y comerse el reloj en las técnicas no sirve |
+| 3 | **Terminar con margen** sobre los 75 minutos | Sin margen no hay revisión de las marcadas |
+| 4 | **Sin reincidencias en el registro de errores** | La misma sección fallada tres veces es un hueco sin cerrar |
+| 5 | **Ninguna consolidación pendiente de repetir** | — |
+
+Si falta alguna, se arregla antes, aunque el contador diga 43.
+
+---
+
+## Arranque de una conversación nueva
+
+Cada tarea se trabaja en su **propia conversación** dentro del proyecto, para no arrastrar contexto. La continuidad la dan estos dos documentos, no el historial del chat.
+
+**Protocolo de cada conversación:**
+
+1. Leer el apartado **Estado actual** (al final) para saber qué tarea toca.
+2. **Mini-test de recuperación**: 4-5 preguntas sobre tareas **anteriores**, antes de la teoría.
+3. Teoría de la tarea.
+4. **Cuestionario de 8 preguntas** en formato de examen.
+5. **Actualizar este documento y los apuntes** antes de cerrar la conversación.
+
+**Regla que sostiene el sistema:** lo que no quede escrito en estos dos documentos se pierde al cerrar la conversación. Si surge algo que merece conservarse — una duda recurrente, una decisión, un patrón de fallo — se escribe antes de cerrar.
+
+Nombrar cada conversación con su tarea (`Tarea 1.3`, `Tarea 1.4`…) y no cerrarla hasta que la tarea esté marcada aquí.
+
+---
+
 ## Reglas del método
 
 1. **Recuperación activa, no relectura.** Responder antes de sentirse listo, fallar y volver al texto.
@@ -69,7 +105,7 @@ ISTQB presupuesta 1 minuto por pregunta K1/K2 y 3 minutos por pregunta K3: 56 mi
 - [x] **1.1** Cap. 1 bloque A — Terminology and principles ✅ **7/8 (88%)**
   - Testing vs debugging · Testing, QA and quality control · Error, defect, failure, root cause · Verification vs validation · The seven testing principles
   - Fallo: defect alojado en documentación (ver registro de errores)
-- [ ] **1.2** Cap. 1 bloque B — Proceso y productos
+- [x] **1.2** Cap. 1 bloque B — Proceso y productos ✅ **7/8 (88%)**
   - Las siete actividades de prueba · Análisis (qué probar) vs diseño (cómo probar) · Testware de cada actividad · Trazabilidad y su valor · Roles de gestión y de prueba
 - [ ] **1.3** Cap. 1 bloque C — Personas
   - Habilidades esenciales · Enfoque de equipo completo · Niveles de independencia: ventajas e inconvenientes · Sesgos cognitivos
@@ -175,11 +211,13 @@ Se va rellenando desde la fase 1. Es el documento que más valor acumula.
 | Fecha | Term / topic (EN) | Sección | Por qué fallé | Repasado |
 |---|---|---|---|---|
 | Sesión 1 | **Defect vs error** — un *defect* puede estar en documentación (especificación, test script), no solo en código. El *error* es el acto mental; el *defect* es lo que queda escrito en el work product. | 1.2.3 | Definición | Sí |
+| Sesión 1 | **Test management role vs testing role** — *"take corrective action to meet the objectives of the test plan"* = test control → management. El sonido cotidiano de los verbos está invertido: *organizar* suena a gestión pero es implementation; *acciones correctivas* suena operativo pero es gestión. **Regla: ir de la tarea a la ACTIVIDAD, y de la actividad al rol. Nunca del verbo al rol.** | 1.4.5 | Clasificación | Sí |
 
 Categorías de fallo útiles para distinguir:
 - **Definición** — no sabía el término exacto
 - **Matiz** — sabía el concepto pero no la excepción que pregunta el syllabus
 - **Mecánica** — técnica mal aplicada o mal conteo de coverage items
+- **Clasificación** — entendía el concepto pero lo metí en la casilla equivocada
 - **Intuición** — respondí lo que funciona en la práctica, no lo que dice el syllabus
 - **Lectura** — no leí bien el enunciado o me comí un "NO"
 
@@ -187,9 +225,11 @@ Categorías de fallo útiles para distinguir:
 
 ## Estado actual
 
-**Fase 1, tarea 1.2** — siguiente: bloque B del capítulo 1 (actividades del proceso, testware, trazabilidad, roles).
+**Fase 1, tarea 1.3 — EN CURSO.** Teoría del bloque C leída (habilidades esenciales, whole team approach, niveles de independencia, sesgos cognitivos). **Pendiente: el cuestionario de 8 preguntas.** El mini-test de recuperación de los bloques A y B ya se hizo: 5/5.
 
-Progreso: **5 de 43 tareas** completadas.
+Al cerrar la 1.3, la siguiente es la **1.4**, consolidación del capítulo 1 (10 preguntas mezclando los tres bloques, criterio ≥8/10).
+
+Progreso: **6 de 43 tareas** completadas.
 
 ### Historial de resultados
 
@@ -197,12 +237,31 @@ Progreso: **5 de 43 tareas** completadas.
 |---|---|---|
 | 0.1 Prueba en frío | 2/8 (25%) | Sin material previo, con preguntas trampa deliberadas |
 | 1.1 Ch.1 Block A | **7/8 (88%)** | Primer cuestionario en inglés |
+| 1.2 Ch.1 Block B | **7/8 (88%)** | Fallo de clasificación (roles) |
+| Mini-test Ch.1 A+B | **5/5 (100%)** | Recuperación espaciada. Incluía las dos casillas falladas antes (testware y roles): superadas |
 
 ### Ritmo previsto
 
 A una tarea al día: **38 tareas pendientes**, unas 28 horas de estudio. Realista en calendario: 7-8 semanas, contando repeticiones de consolidación y la fase 5 sin comprimir.
 
-**Rutina de sesión:** 5 minutos releyendo el registro de errores antes de la tarea del día. Es lo que convierte la secuencia en repaso espaciado.
+**Rutina de sesión:**
+1. 5 minutos releyendo el **registro de errores** (abajo) y los **apuntes de conceptos** (`apuntes-conceptos-clave.md`). Es lo que convierte la secuencia en repaso espaciado.
+2. **Mini-test de recuperación** (4 preguntas, cuestionario interactivo): sobre material de tareas **anteriores**, no de la del día. Se responde a ciegas y se corrige, así que mide recuperación real y no reconocimiento. Arranca en la tarea 1.5 (la 1.4 ya es consolidación de capítulo 1).
+
+### Patrón de fallos detectado
+
+Los dos fallos de la fase 1 (1.1 y 1.2) fueron de **clasificación**, no de comprensión: los conceptos estaban, la casilla no. La clasificación no se entrena leyendo explicaciones más largas, se entrena clasificando bajo evaluación — de ahí el mini-test de recuperación al inicio de cada tarea.
+
+**Descartado:** el mini-drill autoadministrado (ítems con las respuestas debajo). Mide reconocimiento, no recuperación: al ver la respuesta no se distingue saberla de reconocerla.
+
+**Seguimiento:** el mini-test de recuperación de los bloques A y B (5/5) incluía deliberadamente las dos casillas falladas antes — testware por actividad y tarea por rol — y ambas salieron bien. Indicio de que el hueco se ha cerrado; confirmarlo en la consolidación 1.4 antes de darlo por resuelto.
+
+### Documentos del proyecto
+
+| Archivo | Para qué |
+|---|---|
+| `plan-istqb-ctfl-v4.md` | Este documento: tareas, resultados, registro de errores de test |
+| `apuntes-conceptos-clave.md` | Conceptos que costaron entender, condensados para repaso |
 
 ### Decisiones tomadas
 
