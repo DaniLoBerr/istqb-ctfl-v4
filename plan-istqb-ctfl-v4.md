@@ -1,6 +1,9 @@
 # Plan de preparación — ISTQB CTFL v4.0
 
-Documento de seguimiento. Marca cada tarea al completarla.
+Referencia estable: datos del examen, método y las 43 tareas.
+**El progreso y el registro de errores viven en [`ESTADO.md`](ESTADO.md)**, que es lo que se lee al
+empezar cada conversación. Este documento se consulta al entrar en una fase nueva o cuando hace
+falta el detalle de una tarea.
 
 ---
 
@@ -59,24 +62,6 @@ Si falta alguna, se arregla antes, aunque el contador diga 43.
 
 ---
 
-## Arranque de una conversación nueva
-
-Cada tarea se trabaja en su **propia conversación** dentro del proyecto, para no arrastrar contexto. La continuidad la dan estos dos documentos, no el historial del chat.
-
-**Protocolo de cada conversación:**
-
-1. Leer el apartado **Estado actual** (al final) para saber qué tarea toca.
-2. **Mini-test de recuperación**: 4-5 preguntas sobre tareas **anteriores**, antes de la teoría.
-3. Teoría de la tarea.
-4. **Cuestionario de 8 preguntas** en formato de examen.
-5. **Actualizar este documento y los apuntes** antes de cerrar la conversación.
-
-**Regla que sostiene el sistema:** lo que no quede escrito en estos dos documentos se pierde al cerrar la conversación. Si surge algo que merece conservarse — una duda recurrente, una decisión, un patrón de fallo — se escribe antes de cerrar.
-
-Nombrar cada conversación con su tarea (`Tarea 1.3`, `Tarea 1.4`…) y no cerrarla hasta que la tarea esté marcada aquí.
-
----
-
 ## Reglas del método
 
 1. **Recuperación activa, no relectura.** Responder antes de sentirse listo, fallar y volver al texto.
@@ -107,8 +92,9 @@ Nombrar cada conversación con su tarea (`Tarea 1.3`, `Tarea 1.4`…) y no cerra
   - Fallo: defect alojado en documentación (ver registro de errores)
 - [x] **1.2** Cap. 1 bloque B — Proceso y productos ✅ **7/8 (88%)**
   - Las siete actividades de prueba · Análisis (qué probar) vs diseño (cómo probar) · Testware de cada actividad · Trazabilidad y su valor · Roles de gestión y de prueba
-- [ ] **1.3** Cap. 1 bloque C — Personas
+- [x] **1.3** Cap. 1 bloque C — Personas ✅ **8/8 (100%)**
   - Habilidades esenciales · Enfoque de equipo completo · Niveles de independencia: ventajas e inconvenientes · Sesgos cognitivos
+  - Sin fallos. Capítulo 1 visto entero.
 - [ ] **1.4** Consolidación cap. 1 — Ronda mixta de 10 preguntas
   - *Criterio de avance: ≥8/10*
 - [ ] **1.5** Cap. 3 bloque A — Fundamentos de pruebas estáticas
@@ -183,7 +169,7 @@ Nombrar cada conversación con su tarea (`Tarea 1.3`, `Tarea 1.4`…) y no cerra
 ## Fase 5 — Simulacros
 *Aquí, y solo aquí, se usan los cuatro exámenes oficiales de muestra*
 
-- [ ] **5.1** Simulacro A cronometrado — 60 min, sin material, de una sentada
+- [ ] **5.1** Simulacro A cronometrado — 75 min, sin material, de una sentada
 - [ ] **5.2** Corrección y registro de errores — Cada fallo a su sección del syllabus; relectura dirigida
 - [ ] **5.3** Simulacro B cronometrado + corrección y remediación
 - [ ] **5.4** Repaso en frío de las 8 técnicas K3 — Un ejercicio de cada una, sin consultar nada
@@ -204,64 +190,15 @@ Nombrar cada conversación con su tarea (`Tarea 1.3`, `Tarea 1.4`…) y no cerra
 
 ---
 
-## Registro de errores
-
-Se va rellenando desde la fase 1. Es el documento que más valor acumula.
-
-| Fecha | Term / topic (EN) | Sección | Por qué fallé | Repasado |
-|---|---|---|---|---|
-| Sesión 1 | **Defect vs error** — un *defect* puede estar en documentación (especificación, test script), no solo en código. El *error* es el acto mental; el *defect* es lo que queda escrito en el work product. | 1.2.3 | Definición | Sí |
-| Sesión 1 | **Test management role vs testing role** — *"take corrective action to meet the objectives of the test plan"* = test control → management. El sonido cotidiano de los verbos está invertido: *organizar* suena a gestión pero es implementation; *acciones correctivas* suena operativo pero es gestión. **Regla: ir de la tarea a la ACTIVIDAD, y de la actividad al rol. Nunca del verbo al rol.** | 1.4.5 | Clasificación | Sí |
-
-Categorías de fallo útiles para distinguir:
-- **Definición** — no sabía el término exacto
-- **Matiz** — sabía el concepto pero no la excepción que pregunta el syllabus
-- **Mecánica** — técnica mal aplicada o mal conteo de coverage items
-- **Clasificación** — entendía el concepto pero lo metí en la casilla equivocada
-- **Intuición** — respondí lo que funciona en la práctica, no lo que dice el syllabus
-- **Lectura** — no leí bien el enunciado o me comí un "NO"
-
----
-
-## Estado actual
-
-**Fase 1, tarea 1.3 — EN CURSO.** Teoría del bloque C leída (habilidades esenciales, whole team approach, niveles de independencia, sesgos cognitivos). **Pendiente: el cuestionario de 8 preguntas.** El mini-test de recuperación de los bloques A y B ya se hizo: 5/5.
-
-Al cerrar la 1.3, la siguiente es la **1.4**, consolidación del capítulo 1 (10 preguntas mezclando los tres bloques, criterio ≥8/10).
-
-Progreso: **6 de 43 tareas** completadas.
-
-### Historial de resultados
-
-| Tarea | Resultado | Nota |
-|---|---|---|
-| 0.1 Prueba en frío | 2/8 (25%) | Sin material previo, con preguntas trampa deliberadas |
-| 1.1 Ch.1 Block A | **7/8 (88%)** | Primer cuestionario en inglés |
-| 1.2 Ch.1 Block B | **7/8 (88%)** | Fallo de clasificación (roles) |
-| Mini-test Ch.1 A+B | **5/5 (100%)** | Recuperación espaciada. Incluía las dos casillas falladas antes (testware y roles): superadas |
-
 ### Ritmo previsto
 
-A una tarea al día: **38 tareas pendientes**, unas 28 horas de estudio. Realista en calendario: 7-8 semanas, contando repeticiones de consolidación y la fase 5 sin comprimir.
+A una tarea al día: **36 tareas pendientes**, unas 28 horas de estudio. Realista en calendario: 7-8 semanas, contando repeticiones de consolidación y la fase 5 sin comprimir.
 
 **Rutina de sesión:**
-1. 5 minutos releyendo el **registro de errores** (abajo) y los **apuntes de conceptos** (`apuntes-conceptos-clave.md`). Es lo que convierte la secuencia en repaso espaciado.
-2. **Mini-test de recuperación** (4 preguntas, cuestionario interactivo): sobre material de tareas **anteriores**, no de la del día. Se responde a ciegas y se corrige, así que mide recuperación real y no reconocimiento. Arranca en la tarea 1.5 (la 1.4 ya es consolidación de capítulo 1).
+1. 5 minutos releyendo el **registro de errores** de [`ESTADO.md`](ESTADO.md) y los **apuntes de conceptos**. Es lo que convierte la secuencia en repaso espaciado.
+2. **Mini-test de recuperación** (4-5 preguntas, cuestionario interactivo): sobre material de tareas **anteriores**, no de la del día. Se responde a ciegas y se corrige, así que mide recuperación real y no reconocimiento.
 
-### Patrón de fallos detectado
-
-Los dos fallos de la fase 1 (1.1 y 1.2) fueron de **clasificación**, no de comprensión: los conceptos estaban, la casilla no. La clasificación no se entrena leyendo explicaciones más largas, se entrena clasificando bajo evaluación — de ahí el mini-test de recuperación al inicio de cada tarea.
-
-**Descartado:** el mini-drill autoadministrado (ítems con las respuestas debajo). Mide reconocimiento, no recuperación: al ver la respuesta no se distingue saberla de reconocerla.
-
-**Seguimiento:** el mini-test de recuperación de los bloques A y B (5/5) incluía deliberadamente las dos casillas falladas antes — testware por actividad y tarea por rol — y ambas salieron bien. Indicio de que el hueco se ha cerrado; confirmarlo en la consolidación 1.4 antes de darlo por resuelto.
-
-### Documentos del proyecto
-
-| Archivo | Para qué |
-|---|---|
-| `plan-istqb-ctfl-v4.md` | Este documento: tareas, resultados, registro de errores de test |
-| `apuntes-conceptos-clave.md` | Conceptos que costaron entender, condensados para repaso |
+---
 
 ### Decisiones tomadas
 
@@ -270,3 +207,7 @@ Los dos fallos de la fase 1 (1.1 y 1.2) fueron de **clasificación**, no de comp
 | Sesión 1 | Examen en **inglés** | Terminología ISTQB como jerga propia; material oficial en inglés; +25% de tiempo |
 | Sesión 1 | Exámenes de muestra reservados a la fase 5 | Recurso agotable: solo miden una vez |
 | Sesión 1 | Criterio de listo en 33/40, no 26/40 | Margen para nervios y preguntas desafortunadas |
+| Sesión 2 | Una tarea = una conversación | El historial del chat deja de ser la memoria; la llevan los documentos del repo |
+| Sesión 2 | **El repo es la única fuente de verdad** | Los documentos estaban duplicados como docs del proyecto y en el repo, y ya habían derivado |
+| Sesión 2 | Estado separado del plan (`ESTADO.md`) | Lo que cambia cada tarea pesa 4 KB; el plan entero, 16. Se lee lo que cambia |
+| Sesión 2 | **En el proyecto solo el syllabus** | Las búsquedas devolvían exámenes de muestra (incluidas sus respuestas), quemando el recurso antes de la fase 5 |

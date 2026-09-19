@@ -12,8 +12,12 @@ se me resistieron y la idea concreta que los desbloqueó.
 
 | Archivo | Qué es |
 |---|---|
-| [`plan-istqb-ctfl-v4.md`](plan-istqb-ctfl-v4.md) | Plan de preparación por fases, con datos del examen, reglas del método, registro de errores y estado actual |
+| [`ESTADO.md`](ESTADO.md) | Por dónde va la preparación: tarea actual, historial de resultados y registro de errores |
+| [`plan-istqb-ctfl-v4.md`](plan-istqb-ctfl-v4.md) | Plan por fases con las 43 tareas, datos del examen, reglas del método y criterio para presentarse |
 | [`apuntes-conceptos-clave.md`](apuntes-conceptos-clave.md) | Conceptos que costaron, condensados a la idea que los desbloqueó, con la trampa de examen asociada |
+
+El estado se mantiene aparte del plan a propósito: es lo que cambia en cada sesión, mientras que el
+plan es referencia estable.
 
 ---
 
@@ -44,8 +48,7 @@ idioma); las explicaciones, en castellano.
 | 5 | Simulacros con los exámenes oficiales de muestra | — |
 | 6 | Logística previa | — |
 
-El estado y el progreso actualizados están al final de
-[`plan-istqb-ctfl-v4.md`](plan-istqb-ctfl-v4.md#estado-actual).
+El estado y el progreso actualizados están en [`ESTADO.md`](ESTADO.md).
 
 ---
 
