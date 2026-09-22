@@ -8,11 +8,11 @@ los conceptos que costaron, en [`apuntes-conceptos-clave.md`](apuntes-conceptos-
 
 ## Estado actual
 
-**Capítulo 1 completo y consolidado.** Tarea 1.4 (ronda mixta de 10 preguntas, separación temporal real respecto al bloque A): **8/10 (80%)**. Criterio de avance (≥8/10) cumplido.
+**Capítulo 1 completo y consolidado.** Tarea 1.5 (Cap. 3 bloque A, fundamentos de pruebas estáticas): **8/8 (100%)**. Pleno, sin fallos nuevos.
 
-**Siguiente: tarea 1.5** — Cap. 3 bloque A, fundamentos de pruebas estáticas.
+**Siguiente: tarea 1.6** — Cap. 3 bloque B, el proceso de revisión.
 
-Progreso: **8 de 43 tareas** completadas.
+Progreso: **9 de 43 tareas** completadas.
 
 ---
 
@@ -26,6 +26,7 @@ Progreso: **8 de 43 tareas** completadas.
 | Mini-test Ch.1 A+B | **5/5 (100%)** | Recuperación espaciada. Incluía las dos casillas falladas antes (testware y roles): superadas |
 | 1.3 Ch.1 Block C | **8/8 (100%)** | Primer pleno. Capítulo 1 completo |
 | 1.4 Consolidación Ch.1 (mixta A+B+C) | **8/10 (80%)** | Dos fallos: clasificación fina (test procedures → implementation, no analysis) y matiz (whole-team approach). El fallo de clasificación management/testing de 1.2 no reincidió |
+| 1.5 Ch.3 Block A — Static testing basics | **8/8 (100%)** | Pleno. Mini-test de recuperación previo (4/4) también sin fallos: whole-team approach y test procedures/implementation, ambos corregidos en 1.4, no reincidieron |
 
 ---
 
@@ -54,9 +55,11 @@ Categorías de fallo útiles para distinguir:
 
 Los dos fallos de la fase 1 (1.1 y 1.2) fueron de **clasificación**, no de comprensión: los conceptos estaban, la casilla no. La clasificación no se entrena leyendo explicaciones más largas, se entrena clasificando bajo evaluación — de ahí el mini-test de recuperación al inicio de cada tarea.
 
-**Descartado:** el mini-drill autoadministrado (ítems con las respuestas debajo). Mide reconocimiento, no recuperación: al ver la respuesta no se distingue saberla de reconocerla.
-
 **Confirmado en 1.4:** el mini-test de bloques A+B (5/5) y la consolidación 1.4 (8/10, con separación temporal real) muestran que la frontera **management vs testing role** quedó asentada — cero fallos en ella en 1.3 y 1.4. Lo que sigue costando es un nivel más fino: **dentro** del testing role, la frontera entre sub-actividades (analysis vs implementation) en tareas concretas como test conditions/coverage items (design) vs test procedures/test data (implementation). Mismo patrón de fondo — ir de la tarea a la actividad exacta, no fiarse del sonido de la palabra — aplicado a una frontera más estrecha.
+
+**Confirmado en 1.5:** el mini-test de recuperación previo a la tarea (4/4, incluyendo whole-team approach y test procedures/implementation) confirma que los dos fallos de 1.4 quedaron cerrados, no solo repasados. Capítulo 3 bloque A resuelto sin ningún fallo — primer bloque de contenido nuevo con pleno directo.
+
+**Descartado:** el mini-drill autoadministrado (ítems con las respuestas debajo). Mide reconocimiento, no recuperación: al ver la respuesta no se distingue saberla de reconocerla.
 
 ---
 
