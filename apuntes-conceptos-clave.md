@@ -20,6 +20,7 @@ Complemento del plan de estudio. Aquí van los conceptos que pedí aclarar apart
 8. [La frontera analysis / design / implementation](#8-la-frontera-analysis--design--implementation)
 9. [Traceability](#9-traceability)
 10. [Los dos roles](#10-los-dos-roles)
+11. [Whole-team approach](#11-whole-team-approach)
 
 ---
 
@@ -128,6 +129,8 @@ Ejemplo completo — formulario de registro con campo de edad 18-65:
 | Coverage item | 17, 18, 19, 64, 65, 66 |
 | Test case | Entrada 17 → esperado: rechazo |
 | Test procedure | La secuencia ordenada de esos casos |
+
+**Trampa que ya ha costado (tarea 1.4):** *"priorizar test procedures"* suena a decisión de análisis ("qué es más importante probar primero"), pero **priorizar y secuenciar procedures es implementation**, no analysis. El analysis decide *qué* condiciones probar; el implementation decide *en qué orden* se ejecutan los procedures ya diseñados. Ver la fila de la tabla de arriba: test procedure siempre cae en implementation, sea para crearlo o para priorizarlo.
 
 Secciones 1.4.1, 1.4.3
 
@@ -274,10 +277,11 @@ Defects típicos del test basis: **ambigüedades, contradicciones, omisiones, in
 | Test data | **Implementation** | El registro creado en la base de datos |
 | Test environment **requirements** | **Design** | "Servidor versión X, BD Y, mock de la pasarela" |
 | Test environment | **Implementation** | El entorno montado, con stubs y drivers, y verificado |
+| Test procedures (derivarlos y priorizarlos) | **Implementation** | La secuencia ordenada en que se van a ejecutar los test cases |
 
-**En design escribes la lista de la compra. En implementation vas al supermercado.**
+**En design escribes la lista de la compra. En implementation vas al supermercado, y también decides en qué orden recorres los pasillos.**
 
-**Trampa:** "preparar datos de prueba" suena a una sola cosa y son dos, repartidas en dos actividades distintas.
+**Trampa:** "preparar datos de prueba" suena a una sola cosa y son dos, repartidas en dos actividades distintas. Lo mismo pasa con "priorizar" — priorizar test conditions es analysis, priorizar test procedures es implementation. El verbo es el mismo, la actividad no.
 
 Secciones 1.4.1, 1.4.3
 
@@ -377,6 +381,22 @@ Dentro del equipo el rol **se diluye**: el propio equipo absorbe buena parte de 
 Por encima del equipo **se concentra**: para actividades que abarcan varios equipos sigue habiendo test managers **fuera** del equipo (entornos compartidos, estrategia de prueba organizacional, mejora del proceso entre equipos).
 
 Sección 1.4.5 · **Fallado en el test del bloque B**
+
+---
+
+## 11. Whole-team approach
+
+**Duda:** qué significa exactamente y por qué "ya no hacen falta testers independientes/especialistas" es un distractor tentador.
+
+**La clave:** el whole-team approach mete la experiencia de testing **dentro** del equipo desde el principio; no la elimina. El objetivo es mejorar la calidad y reducir la necesidad de una **fase de prueba separada** al final del desarrollo — no eliminar el rol de tester ni la especialización.
+
+**Por qué falla la trampa:** "todo el equipo prueba" suena a "ya no hace falta un especialista". Pero dentro del equipo puede (y suele) seguir habiendo personas que ejercen principalmente el testing role, aportando su perspectiva y sus habilidades especializadas — simplemente integradas en el equipo desde el día uno, en vez de en una fase o departamento aparte al final.
+
+**Trampa:** cualquier opción que diga que el whole-team approach *elimina* o *sustituye* a los testers es incorrecta. Cambia *cuándo* y *dónde* se aplica la experiencia de testing (integrada, desde el principio), no *si* hace falta.
+
+**Cómo no confundirlo con independencia (entrada relacionada, bloque C):** el whole-team approach no es un nivel de independencia — es una forma de organizar el trabajo dentro del equipo. Son ejes distintos: se puede tener whole-team approach y, dentro de ese equipo, alguien con testing role de mayor independencia que el resto.
+
+Sección 1.5.2 · **Fallado en la consolidación 1.4**
 
 ---
 
