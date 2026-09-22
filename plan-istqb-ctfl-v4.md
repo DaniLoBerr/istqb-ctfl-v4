@@ -95,8 +95,9 @@ Si falta alguna, se arregla antes, aunque el contador diga 43.
 - [x] **1.3** Cap. 1 bloque C — Personas ✅ **8/8 (100%)**
   - Habilidades esenciales · Enfoque de equipo completo · Niveles de independencia: ventajas e inconvenientes · Sesgos cognitivos
   - Sin fallos. Capítulo 1 visto entero.
-- [ ] **1.4** Consolidación cap. 1 — Ronda mixta de 10 preguntas
-  - *Criterio de avance: ≥8/10*
+- [x] **1.4** Consolidación cap. 1 — Ronda mixta de 10 preguntas ✅ **8/10 (80%)**
+  - *Criterio de avance: ≥8/10* — cumplido
+  - Fallos: test procedures vs test conditions (clasificación fina analysis/implementation), whole-team approach (matiz)
 - [ ] **1.5** Cap. 3 bloque A — Fundamentos de pruebas estáticas
   - Qué puede examinarse · Qué detecta la estática que no detecta la dinámica · Valor del feedback temprano · Estática vs dinámica
 - [ ] **1.6** Cap. 3 bloque B — El proceso de revisión
