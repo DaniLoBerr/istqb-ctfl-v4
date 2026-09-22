@@ -16,7 +16,7 @@ Los documentos están partidos para no abrirlos enteros. **Abre el archivo concr
 |---|---|---|
 | `ESTADO.md` | Estado actual (qué tarea toca), historial de resultados, **registro de errores**, patrón de fallos y protocolo de cada conversación | **Siempre al empezar una tarea** |
 | `plan-istqb-ctfl-v4.md` | Datos del examen, criterio de listo, reglas del método y las 43 tareas de las fases 0-6. Referencia estable | Al entrar en una fase, para el detalle de una tarea o para marcarla |
-| `apuntes-conceptos-clave.md` | Conceptos que costaron, condensados a la idea que los desbloqueó. Su índice está arriba | Para repasar o añadir una entrada; usa el índice para ir a la sección |
+| `apuntes/` | Conceptos que costaron, condensados a la idea que los desbloqueó. Un archivo por capítulo del syllabus; numeración global | Para repasar o añadir una entrada: abre `apuntes/00-indice.md` y de ahí solo el capítulo que toca |
 | `docs/instrucciones-proyecto-claude.md` | Texto para pegar en el proyecto de la app de Claude y hábitos que ahorran tokens | Solo si se cambian esas instrucciones |
 | `istqb-ctfl-materials/` | PDFs oficiales (solo locales, ignorados por git) | Solo si hace falta el texto literal del syllabus |
 
@@ -25,10 +25,10 @@ Los documentos están partidos para no abrirlos enteros. **Abre el archivo concr
 ## Cómo se trabaja aquí
 
 1. **Cada tarea del plan (`1.4`, `1.5`…) es una conversación propia.** Protocolo completo en `ESTADO.md`: leer estado → mini-test de recuperación → teoría → cuestionario → actualizar el repo antes de cerrar.
-2. **Al cerrar una tarea se actualiza:** `ESTADO.md` (estado actual, historial de resultados y, si hubo fallos, una fila en el registro de errores con su sección del syllabus y su categoría), la tarea marcada en `plan-istqb-ctfl-v4.md`, y `apuntes-conceptos-clave.md` solo si surgió un concepto nuevo que costó.
+2. **Al cerrar una tarea se actualiza:** `ESTADO.md` (estado actual, historial de resultados y, si hubo fallos, una fila en el registro de errores con su sección del syllabus y su categoría), la tarea marcada en `plan-istqb-ctfl-v4.md`, y la entrada en su capítulo de `apuntes/` (y en `apuntes/00-indice.md`) solo si surgió un concepto nuevo que costó.
 3. **Se trabaja directamente en `main`**: commit y `git push` al terminar cada cambio, sin pedir permiso. Un commit por cambio con sentido propio, mensaje en imperativo describiendo el cambio, no el archivo. Rama + PR solo para reestructuraciones grandes.
 4. Nunca: cambiar la visibilidad del repo, borrarlo, ni `push --force` (bloqueado en `.claude/settings.json`).
-5. Si un archivo que se consulta mucho crece demasiado (`apuntes-conceptos-clave.md`, ~20 KB, es el candidato; también el registro de errores de `ESTADO.md`), se parte por capítulo del syllabus con un `00-indice.md`, y se actualiza esta tabla.
+5. Si un archivo que se consulta mucho crece demasiado (~20 KB), se parte por capítulo del syllabus con un `00-indice.md`, como ya se hizo con `apuntes/`. El siguiente candidato es el registro de errores de `ESTADO.md`. Se actualiza esta tabla.
 
 ## Cómo quiere Dani las respuestas
 

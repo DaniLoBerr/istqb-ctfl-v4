@@ -2,7 +2,7 @@
 
 **Documento de arranque.** Es lo único que hace falta leer al empezar una conversación.
 El método, las fases y las 43 tareas están en [`plan-istqb-ctfl-v4.md`](plan-istqb-ctfl-v4.md);
-los conceptos que costaron, en [`apuntes-conceptos-clave.md`](apuntes-conceptos-clave.md).
+los conceptos que costaron, en [`apuntes/`](apuntes/00-indice.md), un archivo por capítulo.
 
 ---
 
@@ -87,7 +87,7 @@ resultado esté escrito aquí.
 |---|---|
 | Saber por dónde vamos | `ESTADO.md` (este archivo) |
 | El detalle de una tarea o del método | `plan-istqb-ctfl-v4.md` |
-| Lo que ya costó explicar | `apuntes-conceptos-clave.md` |
+| Lo que ya costó explicar | `apuntes/00-indice.md` → el capítulo que toca |
 | Contenido del temario | El **syllabus** en los archivos del proyecto |
 | Exámenes de muestra | **Nada hasta la fase 5.** No están en el proyecto a propósito |
 

@@ -14,7 +14,7 @@ se me resistieron y la idea concreta que los desbloqueó.
 |---|---|
 | [`ESTADO.md`](ESTADO.md) | Por dónde va la preparación: tarea actual, historial de resultados y registro de errores |
 | [`plan-istqb-ctfl-v4.md`](plan-istqb-ctfl-v4.md) | Plan por fases con las 43 tareas, datos del examen, reglas del método y criterio para presentarse |
-| [`apuntes-conceptos-clave.md`](apuntes-conceptos-clave.md) | Conceptos que costaron, condensados a la idea que los desbloqueó, con la trampa de examen asociada |
+| [`apuntes/`](apuntes/00-indice.md) | Conceptos que costaron, condensados a la idea que los desbloqueó, con la trampa de examen asociada. Un archivo por capítulo del syllabus |
 
 El estado se mantiene aparte del plan a propósito: es lo que cambia en cada sesión, mientras que el
 plan es referencia estable.

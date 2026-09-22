@@ -1,75 +1,6 @@
-# Apuntes — conceptos que costaron
+# Apuntes · Cap. 1 — Fundamentals of Testing
 
-Complemento del plan de estudio. Aquí van los conceptos que pedí aclarar aparte, condensados a la idea que los desbloqueó.
-
-**No es una transcripción de las explicaciones**: es la versión corta para repasar en cinco minutos. Cada entrada tiene la duda original, la clave y, cuando aplica, la trampa de examen asociada.
-
-**Cómo usarlo:** leer al empezar cada sesión, junto con el registro de errores del plan. Cuando una entrada ya resulte obvia dos sesiones seguidas, marcarla como asentada y dejar de leerla.
-
----
-
-## Índice
-
-1. [Coverage item](#1-coverage-item)
-2. [BVA — Boundary Value Analysis](#2-bva--boundary-value-analysis)
-3. [La cadena de términos](#3-la-cadena-de-términos)
-4. [Error, defect, failure, root cause](#4-error-defect-failure-root-cause)
-5. [Defect clusters y risk-based testing](#5-defect-clusters-y-risk-based-testing)
-6. [Tests wear out vs regresión automatizada](#6-tests-wear-out-vs-regresión-automatizada)
-7. [Los dos principios que se confunden](#7-los-dos-principios-que-se-confunden)
-8. [La frontera analysis / design / implementation](#8-la-frontera-analysis--design--implementation)
-9. [Traceability](#9-traceability)
-10. [Los dos roles](#10-los-dos-roles)
-11. [Whole-team approach](#11-whole-team-approach)
-
----
-
-## 1. Coverage item
-
-**Duda:** qué es exactamente y en qué se diferencia de un test case.
-
-**La clave:** es **cada casilla que hay que tocar** para poder decir que has probado algo del todo. Sin esa lista no hay porcentaje posible.
-
-```
-Cobertura = casillas tocadas ÷ casillas totales × 100
-```
-
-**La lista no la inventas tú, te la da la técnica.** Eso es lo que hace el resultado comprobable en vez de opinable: otra persona con la misma técnica llega a la misma lista.
-
-Campo de edad 18-65:
-
-| Técnica | Coverage items | Cuántos |
-|---|---|---|
-| Equivalence partitioning | <18 · 18-65 · >65 | 3 |
-| 2-value BVA | 17 · 18 · 65 · 66 | 4 |
-| 3-value BVA | 17 · 18 · 19 · 64 · 65 · 66 | 6 |
-
-**Coverage item vs test case:** el coverage item es *lo que hay que tocar*; el test case es *cómo lo tocas*. Un test case puede cubrir varios coverage items a la vez.
-
-**Trampa:** no existe "la cobertura" a secas. Siempre es cobertura **respecto a una técnica concreta**. Y los coverage items se producen en **test design**, no en analysis ni en implementation.
-
-*Imagen útil: examen de 6 preguntas. Las preguntas son los coverage items, tus respuestas son los test cases, tu nota es la cobertura.*
-
-Secciones 1.4.3, 4.2
-
----
-
-## 2. BVA — Boundary Value Analysis
-
-**Duda:** qué significa la sigla y en qué se diferencian las dos variantes.
-
-**La clave:** los defects se concentran en los **bordes** de un rango, no en el medio. El 40 en un campo de 18-65 no descubre nada; los problemas están en el 17, 18, 65 y 66, donde alguien escribió `>` en lugar de `>=`.
-
-| Variante | Regla | Para 18-65 | Items |
-|---|---|---|---|
-| **2-value** | Cada frontera + su vecino de la partición de al lado | 17, 18, 65, 66 | 4 |
-| **3-value** | Cada frontera + **ambos** vecinos | 17, 18, 19, 64, 65, 66 | 6 |
-
-**Fórmula mental:** contar fronteras × 2 o × 3 según la variante.
-
-**Restricción importante:** solo se aplica sobre **particiones ordenadas** (números, fechas, horas). Si el conjunto no tiene orden (métodos de pago, países), no hay fronteras y la técnica no aplica: ahí se usa equivalence partitioning a secas.
-
-Sección 4.2.2 · Se trabaja a fondo en la tarea 3.3 (es K3)
+Entradas 3-11. Índice general en [`00-indice.md`](00-indice.md).
 
 ---
 
@@ -397,11 +328,3 @@ Sección 1.4.5 · **Fallado en el test del bloque B**
 **Cómo no confundirlo con independencia (entrada relacionada, bloque C):** el whole-team approach no es un nivel de independencia — es una forma de organizar el trabajo dentro del equipo. Son ejes distintos: se puede tener whole-team approach y, dentro de ese equipo, alguien con testing role de mayor independencia que el resto.
 
 Sección 1.5.2 · **Fallado en la consolidación 1.4**
-
----
-
-## Asentados
-
-*Mover aquí las entradas que resulten obvias dos sesiones seguidas, para dejar de leerlas sin perderlas.*
-
-(vacío)
