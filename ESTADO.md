@@ -12,6 +12,8 @@ los conceptos que costaron, en [`apuntes/`](apuntes/00-indice.md), un archivo po
 
 **Siguiente: tarea 1.6** — Cap. 3 bloque B, el proceso de revisión.
 
+**1.6 a medias (2026-10-05), retomada tras un parón largo:** mini-test de recuperación previo hecho, **5/5** (test control → management, test procedures → implementation, whole-team approach, static vs dynamic): no repetirlo. Teoría de 1.6 ya vista. **Pendiente:** (1) drill de terminología — Dani nota que reconoce los términos en una pregunta pero no sabe definirlos; definir en una línea work product, anomaly, exit criteria, stakeholder, test basis, error/defect/failure, la cadena test condition → testware y analysis/design/implementation, corregir solo los que fallen y dejarlos en un glosario en `apuntes/`; (2) cuestionario de 8 preguntas.
+
 Progreso: **9 de 43 tareas** completadas.
 
 ---
