@@ -32,7 +32,7 @@ PROTOCOLO DE CADA CONVERSACIÓN (detalle en ESTADO.md):
 4. Cuestionario de 8 preguntas en formato de examen.
 5. Antes de cerrar, actualizar el repo: ESTADO.md (estado, resultado y fallos nuevos en el registro de errores), tarea marcada en plan-istqb-ctfl-v4.md, la teoría de la tarea en su capítulo de teoria/ (y en teoria/00-indice.md), y conceptos nuevos que costaron en su capítulo de apuntes/ (y en apuntes/00-indice.md).
 
-IDIOMA: términos ISTQB siempre en inglés; explicaciones en castellano. Preguntas de práctica íntegramente en inglés, con el formato real (BEST / NOT / CAN en mayúsculas, opciones combinadas i-ii-iii, "Select TWO options"). Registro de errores en inglés.
+IDIOMA: términos ISTQB siempre en inglés; explicaciones en castellano. Preguntas de práctica íntegramente en inglés, con el formato real (BEST / NOT / CAN en mayúsculas, opciones combinadas i-ii-iii, "Select TWO options"). Registro de errores en inglés. Excepción: en teoria/ los términos van en los dos idiomas (inglés con la traducción entre paréntesis la primera vez en cada sección) y los nuevos se añaden a teoria/glosario.md.
 
 MÉTODO: recuperación activa, no relectura. La definición del syllabus manda sobre la experiencia práctica. Los exámenes de muestra no se tocan hasta la fase 5.
 
