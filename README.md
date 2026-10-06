@@ -2,9 +2,9 @@
 
 Material propio de preparación para la certificación **ISTQB Certified Tester Foundation Level, syllabus v4.0.1**.
 
-No es un resumen del syllabus ni un volcado de preguntas: es el **método** con el que lo estoy preparando —
-un plan por fases con criterios de avance medibles, y unos apuntes que solo recogen los conceptos que
-se me resistieron y la idea concreta que los desbloqueó.
+No es un volcado del syllabus ni de preguntas: es el **método** con el que lo estoy preparando —
+un plan por fases con criterios de avance medibles, la teoría que voy viendo escrita con palabras propias,
+y unos apuntes que solo recogen los conceptos que se me resistieron y la idea concreta que los desbloqueó.
 
 ---
 
@@ -14,6 +14,7 @@ se me resistieron y la idea concreta que los desbloqueó.
 |---|---|
 | [`ESTADO.md`](ESTADO.md) | Por dónde va la preparación: tarea actual, historial de resultados y registro de errores |
 | [`plan-istqb-ctfl-v4.md`](plan-istqb-ctfl-v4.md) | Plan por fases con las 43 tareas, datos del examen, reglas del método y criterio para presentarse |
+| [`teoria/`](teoria/00-indice.md) | La teoría vista en cada tarea, con palabras propias, para repasar. Un archivo por capítulo del syllabus |
 | [`apuntes/`](apuntes/00-indice.md) | Conceptos que costaron, condensados a la idea que los desbloqueó, con la trampa de examen asociada. Un archivo por capítulo del syllabus |
 
 El estado se mantiene aparte del plan a propósito: es lo que cambia en cada sesión, mientras que el

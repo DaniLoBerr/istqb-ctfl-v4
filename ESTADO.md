@@ -12,7 +12,7 @@ los conceptos que costaron, en [`apuntes/`](apuntes/00-indice.md), un archivo po
 
 **Siguiente: tarea 1.6** — Cap. 3 bloque B, el proceso de revisión.
 
-**1.6 a medias (2026-10-05), retomada tras un parón largo:** mini-test de recuperación previo hecho, **5/5** (test control → management, test procedures → implementation, whole-team approach, static vs dynamic): no repetirlo. Teoría de 1.6 ya vista. **Pendiente:** (1) drill de terminología — Dani nota que reconoce los términos en una pregunta pero no sabe definirlos; definir en una línea work product, anomaly, exit criteria, stakeholder, test basis, error/defect/failure, la cadena test condition → testware y analysis/design/implementation, corregir solo los que fallen y dejarlos en un glosario en `apuntes/`; (2) cuestionario de 8 preguntas.
+**1.6 a medias (2026-10-05), retomada tras un parón largo:** mini-test de recuperación previo hecho, **5/5** (test control → management, test procedures → implementation, whole-team approach, static vs dynamic): no repetirlo. Teoría de 1.6 ya vista y escrita en `teoria/cap3-static-testing.md` (3.2.2–3.2.5). **Pendiente:** (1) drill de terminología — Dani nota que reconoce los términos en una pregunta pero no sabe definirlos; definir en una línea work product, anomaly, exit criteria, stakeholder, test basis, error/defect/failure, la cadena test condition → testware y analysis/design/implementation, corregir solo los que fallen y dejarlos en un glosario en `apuntes/`; (2) cuestionario de 8 preguntas.
 
 Progreso: **9 de 43 tareas** completadas.
 
@@ -74,7 +74,7 @@ La continuidad la dan los documentos del repo, no el historial del chat.
 2. **Mini-test de recuperación**: 4-5 preguntas sobre tareas **anteriores**, antes de la teoría.
 3. Teoría de la tarea, consultando en el proyecto **solo el syllabus**.
 4. **Cuestionario de 8 preguntas** en formato de examen.
-5. **Actualizar `ESTADO.md`** (y los apuntes, si surgió alguna duda) antes de cerrar.
+5. **Actualizar `ESTADO.md`**, añadir la teoría de la tarea a `teoria/` (y los apuntes, si surgió alguna duda) antes de cerrar.
 
 **Regla que sostiene el sistema:** lo que no quede escrito en el repo se pierde al cerrar la
 conversación. Si surge algo que merece conservarse — una duda recurrente, una decisión, un patrón
@@ -89,6 +89,7 @@ resultado esté escrito aquí.
 |---|---|
 | Saber por dónde vamos | `ESTADO.md` (este archivo) |
 | El detalle de una tarea o del método | `plan-istqb-ctfl-v4.md` |
+| Repasar la teoría ya vista | `teoria/00-indice.md` → el capítulo que toca |
 | Lo que ya costó explicar | `apuntes/00-indice.md` → el capítulo que toca |
 | Contenido del temario | El **syllabus** en los archivos del proyecto |
 | Exámenes de muestra | **Nada hasta la fase 5.** No están en el proyecto a propósito |
