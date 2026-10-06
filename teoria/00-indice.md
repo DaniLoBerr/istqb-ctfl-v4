@@ -6,7 +6,7 @@ La teoría de cada tarea del plan, con palabras propias, para repasarla cuando h
 
 **Diferencia con [`apuntes/`](../apuntes/00-indice.md):** aquí está toda la teoría vista; en `apuntes/` solo lo que costó, con la idea que lo desbloqueó. Cuando un punto tiene entrada en apuntes, se enlaza con →.
 
-**Convenciones:** términos ISTQB en inglés, explicación en castellano. Los avisos **Trampa** marcan lo que el examen usa como distractor.
+**Convenciones:** términos ISTQB en inglés con su traducción entre paréntesis la primera vez que salen en cada sección; explicación en castellano. Todos juntos, en el [glosario inglés → castellano](glosario.md). Los avisos **Trampa** marcan lo que el examen usa como distractor.
 
 ---
 

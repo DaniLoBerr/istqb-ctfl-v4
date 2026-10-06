@@ -6,20 +6,20 @@
 
 ## 3.1 Static testing basics
 
-En **static testing** el software **no se ejecuta**. Los work products se evalúan de dos maneras:
+En **static testing** (prueba estática) el software **no se ejecuta**. Los work products (productos de trabajo) se evalúan de dos maneras:
 
-- **Reviews**: examen manual, hecho por personas.
-- **Static analysis**: examen con herramientas.
+- **Reviews** (revisiones): examen manual, hecho por personas.
+- **Static analysis** (análisis estático): examen con herramientas.
 
-Objetivos: mejorar la calidad, detectar defects y evaluar características como legibilidad, completitud, corrección, testability y consistencia. Sirve tanto para **verification** como para **validation**.
+Objetivos: mejorar la calidad, detectar defects (defectos) y evaluar características como legibilidad, completitud, corrección, testability (capacidad de ser probado) y consistencia. Sirve tanto para **verification** (verificación) como para **validation** (validación).
 
-En la práctica ágil aparece en example mapping, escritura colaborativa de user stories y backlog refinement, donde testers, business representatives y developers comprueban que las user stories cumplen los criterios acordados (p. ej. Definition of Ready).
+En la práctica ágil aparece en example mapping, escritura colaborativa de user stories (historias de usuario) y backlog refinement, donde testers, business representatives (representantes de negocio) y developers comprueban que las user stories cumplen los criterios acordados (p. ej. Definition of Ready).
 
-**Static analysis** detecta problemas antes del dynamic testing y suele costar menos, porque no requiere test cases. Se integra a menudo en CI. Además de defects de código evalúa maintainability y security. Un corrector ortográfico también es static analysis.
+**Static analysis** detecta problemas antes del dynamic testing (prueba dinámica) y suele costar menos, porque no requiere test cases (casos de prueba). Se integra a menudo en CI. Además de defects de código evalúa maintainability (mantenibilidad) y security. Un corrector ortográfico también es static analysis.
 
 ### 3.1.1 Qué se puede examinar
 
-Casi cualquier work product: requirements, código, test plans, test cases, product backlog items, test charters, documentación de proyecto, contratos, modelos.
+Casi cualquier work product: requirements (requisitos), código, test plans (planes de prueba), test cases, product backlog items, test charters (contratos de prueba), documentación de proyecto, contratos, modelos.
 
 - **Reviews**: cualquier work product que se pueda **leer y entender**.
 - **Static analysis**: necesita una **estructura** contra la que comprobar (código, modelos, texto con sintaxis formal).
@@ -31,7 +31,7 @@ No son apropiados los work products difíciles de interpretar por personas y que
 - Detecta defects en las **fases más tempranas** (shift-left).
 - Detecta defects que el dynamic testing **no puede** encontrar: código inalcanzable, patrones de diseño mal implementados, defects en work products no ejecutables.
 - Permite evaluar la calidad de los work products y generar confianza en ellos.
-- Revisando los requirements, los stakeholders comprueban que describen sus necesidades reales.
+- Revisando los requirements, los stakeholders (partes interesadas) comprueban que describen sus necesidades reales.
 - Crea un entendimiento compartido y mejora la comunicación; conviene implicar a stakeholders variados.
 
 Las reviews cuestan, pero el coste total del proyecto suele bajar: se gasta menos en corregir defects más tarde.
@@ -42,7 +42,7 @@ Se complementan. Los dos apoyan la detección de defects, pero:
 
 | | Static | Dynamic |
 |---|---|---|
-| Qué encuentra | **Defects directamente** | **Failures**, de los que luego se deduce el defect analizando |
+| Qué encuentra | **Defects directamente** | **Failures** (fallos), de los que luego se deduce el defect analizando |
 | Sobre qué | Work products ejecutables **y no ejecutables** | Solo ejecutables |
 | Caminos raros | Llega con más facilidad a caminos que casi nunca se ejecutan | Le cuesta alcanzarlos |
 | Qué mide | Características que no dependen de ejecutar (maintainability) | Características que dependen de ejecutar (performance efficiency) |
@@ -55,7 +55,7 @@ Defects más fáciles o baratos de encontrar con static testing:
 - **Desviaciones de estándares**: convenciones de nombres.
 - **Interfaces mal especificadas**: número, tipo u orden de parámetros que no coinciden.
 - **Vulnerabilidades de seguridad** concretas: buffer overflows.
-- **Huecos en la coverage de la test basis**: un acceptance criterion sin tests.
+- **Huecos en la coverage (cobertura) de la test basis** (base de prueba): un acceptance criterion (criterio de aceptación) sin tests.
 
 **Trampa:** todo lo que solo se ve con el sistema en marcha (tiempos de respuesta, un cálculo que sale mal, un crash con cierta entrada) es dynamic.
 
@@ -65,11 +65,11 @@ Defects más fáciles o baratos de encontrar con static testing:
 
 ### 3.2.1 Early and frequent stakeholder feedback
 
-El feedback temprano y frecuente comunica pronto los problemas de calidad. Sin él, el producto puede no ser lo que el stakeholder tenía en mente, y eso acaba en retrabajo caro, plazos incumplidos, reproches o el fracaso del proyecto.
+El feedback temprano y frecuente comunica pronto los problemas de calidad. Sin él, el producto puede no ser lo que el stakeholder (parte interesada) tenía en mente, y eso acaba en retrabajo caro, plazos incumplidos, reproches o el fracaso del proyecto.
 
 Con feedback frecuente:
 
-- Se evitan malentendidos sobre los requirements.
+- Se evitan malentendidos sobre los requirements (requisitos).
 - Los cambios de requirements se entienden e implementan antes.
 - El equipo entiende mejor lo que está construyendo.
 - El esfuerzo se centra en lo que aporta más valor y en lo que más reduce los riesgos identificados.
@@ -82,22 +82,22 @@ Proceso genérico: la formalidad con que se aplica depende del tipo de review.
 
 | Activity | Qué pasa | Trampa |
 |---|---|---|
-| **Planning** | Se define el alcance: propósito, work product, quality characteristics a evaluar, **exit criteria**, esfuerzo y plazos | Los exit criteria se fijan aquí, no al final |
-| **Review initiation** | Que todos y todo estén listos: acceso al work product, cada uno conoce su rol, tiene el material | Es logística de arranque; todavía nadie revisa |
-| **Individual review** | Cada reviewer evalúa por su cuenta y anota **anomalies**, recomendaciones y preguntas | Aquí se encuentra el grueso, no en la reunión |
-| **Communication and analysis** | Se analiza cada anomaly: status, ownership, acciones. Normalmente en un review meeting, donde también se decide el nivel de calidad y si hace falta follow-up | Una **anomaly no es necesariamente un defect**: por eso hay que analizarla |
-| **Fixing and reporting** | Un **defect report** por cada defect, se corrige, se comprueban los exit criteria, se acepta el work product y se informa de los resultados | Los defect reports nacen aquí, no en individual review |
+| **Planning** (planificación) | Se define el alcance: propósito, work product (producto de trabajo), quality characteristics (características de calidad) a evaluar, **exit criteria** (criterios de salida), esfuerzo y plazos | Los exit criteria se fijan aquí, no al final |
+| **Review initiation** (inicio de la revisión) | Que todos y todo estén listos: acceso al work product, cada uno conoce su rol, tiene el material | Es logística de arranque; todavía nadie revisa |
+| **Individual review** (revisión individual) | Cada reviewer (revisor) evalúa por su cuenta y anota **anomalies** (anomalías), recomendaciones y preguntas | Aquí se encuentra el grueso, no en la reunión |
+| **Communication and analysis** (comunicación y análisis) | Se analiza cada anomaly: status, ownership, acciones. Normalmente en un review meeting (reunión de revisión), donde también se decide el nivel de calidad y si hace falta follow-up (seguimiento) | Una **anomaly no es necesariamente un defect** (defecto): por eso hay que analizarla |
+| **Fixing and reporting** (corrección e informe) | Un **defect report** (informe de defecto) por cada defect, se corrige, se comprueban los exit criteria, se acepta el work product y se informa de los resultados | Los defect reports nacen aquí, no en individual review |
 
 ### 3.2.3 Roles and responsibilities
 
 | Role | Qué hace |
 |---|---|
-| **Manager** | Decide **qué** se revisa y pone **recursos** (gente, tiempo) |
-| **Author** | Crea **y corrige** el work product |
-| **Moderator** (facilitator) | Hace que la **reunión** funcione: mediación, gestión del tiempo, ambiente seguro para hablar |
-| **Scribe** (recorder) | **Recopila** las anomalies de los reviewers y registra decisiones y anomalies nuevas de la reunión |
-| **Reviewer** | Revisa. Puede ser alguien del proyecto, un experto en la materia o cualquier otro stakeholder |
-| **Review leader** | Responsabilidad global de la review: **quién** participa, **cuándo** y **dónde** |
+| **Manager** (responsable, dirección) | Decide **qué** se revisa y pone **recursos** (gente, tiempo) |
+| **Author** (autor) | Crea **y corrige** el work product |
+| **Moderator** o facilitator (moderador) | Hace que la **reunión** funcione: mediación, gestión del tiempo, ambiente seguro para hablar |
+| **Scribe** o recorder (escriba) | **Recopila** las anomalies de los reviewers y registra decisiones y anomalies nuevas de la reunión |
+| **Reviewer** (revisor) | Revisa. Puede ser alguien del proyecto, un experto en la materia o cualquier otro stakeholder |
+| **Review leader** (líder de la revisión) | Responsabilidad global de la review: **quién** participa, **cuándo** y **dónde** |
 
 Los pares que se confunden:
 
@@ -105,7 +105,7 @@ Los pares que se confunden:
 - **Review leader vs moderator**: organizar la review, frente a conducir la reunión.
 - **Scribe vs reviewer**: recopilar y registrar, frente a encontrar.
 
-Una persona puede tener varios roles, salvo la restricción de la inspection.
+Una persona puede tener varios roles, salvo la restricción de la inspection (inspección).
 
 ### 3.2.4 Review types
 
@@ -113,10 +113,10 @@ De menos a más formal:
 
 | Tipo | Lo que lo identifica | Objetivo principal |
 |---|---|---|
-| **Informal review** | Sin proceso definido ni salida documentada formal | Detectar anomalies |
-| **Walkthrough** | **Lo dirige el author**. La individual review previa es opcional | Muchos: educar a los reviewers, consenso, generar ideas, confianza, detectar anomalies |
-| **Technical review** | Reviewers técnicamente cualificados, **lo dirige un moderator** | **Consenso y decisiones** sobre un problema técnico |
-| **Inspection** | El más formal, sigue el proceso completo. Se recogen **metrics** para mejorar el SDLC y la propia inspection. **El author no puede ser review leader ni scribe** | Encontrar el **máximo número de anomalies** |
+| **Informal review** (revisión informal) | Sin proceso definido ni salida documentada formal | Detectar anomalies |
+| **Walkthrough** (revisión guiada) | **Lo dirige el author**. La individual review previa es opcional | Muchos: educar a los reviewers, consenso, generar ideas, confianza, detectar anomalies |
+| **Technical review** (revisión técnica) | Reviewers técnicamente cualificados, **lo dirige un moderator** | **Consenso y decisiones** sobre un problema técnico |
+| **Inspection** (inspección) | El más formal, sigue el proceso completo. Se recogen **metrics** (métricas) para mejorar el SDLC y la propia inspection. **El author no puede ser review leader ni scribe** | Encontrar el **máximo número de anomalies** |
 
 Pistas del enunciado: "led by the author" → walkthrough; "technical decision / consensus" → technical review; "metrics", "most formal", "maximum anomalies" → inspection.
 
@@ -129,7 +129,7 @@ Pistas del enunciado: "led by the author" → walkthrough; "technical decision /
 - Dar feedback a stakeholders y authors.
 - Tiempo suficiente para prepararse.
 - Apoyo de management.
-- Reviews como parte de la cultura de la organización.
+- Reviews (revisiones) como parte de la cultura de la organización.
 - Formación de los participantes.
 - Reuniones bien facilitadas.
 

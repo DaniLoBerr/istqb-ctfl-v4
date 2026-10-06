@@ -17,7 +17,7 @@ Los documentos están partidos para no abrirlos enteros. **Abre el archivo concr
 | `ESTADO.md` | Estado actual (qué tarea toca), historial de resultados, **registro de errores**, patrón de fallos y protocolo de cada conversación | **Siempre al empezar una tarea** |
 | `plan-istqb-ctfl-v4.md` | Datos del examen, criterio de listo, reglas del método y las 43 tareas de las fases 0-6. Referencia estable | Al entrar en una fase, para el detalle de una tarea o para marcarla |
 | `apuntes/` | Conceptos que costaron, condensados a la idea que los desbloqueó. Un archivo por capítulo del syllabus; numeración global | Para repasar o añadir una entrada: abre `apuntes/00-indice.md` y de ahí solo el capítulo que toca |
-| `teoria/` | Toda la teoría vista, con palabras propias, para repasarla. Un archivo por capítulo del syllabus, ordenado por secciones | Para consultar o repasar teoría, o para añadir el bloque de la tarea que se cierra: abre `teoria/00-indice.md` y de ahí solo el capítulo que toca |
+| `teoria/` | Toda la teoría vista, con palabras propias, para repasarla. Un archivo por capítulo del syllabus, ordenado por secciones. **Aquí los términos van en los dos idiomas**: en inglés con la traducción entre paréntesis la primera vez en cada sección, y todos en `teoria/glosario.md` | Para consultar o repasar teoría, o para añadir el bloque de la tarea que se cierra: abre `teoria/00-indice.md` y de ahí solo el capítulo que toca |
 | `docs/instrucciones-proyecto-claude.md` | Texto para pegar en el proyecto de la app de Claude y hábitos que ahorran tokens | Solo si se cambian esas instrucciones |
 | `istqb-ctfl-materials/` | PDFs oficiales (solo locales, ignorados por git) | Solo si hace falta el texto literal del syllabus |
 
