@@ -73,6 +73,7 @@ Si falta alguna, se arregla antes, aunque el contador diga 43.
    - **Preguntas de práctica: íntegramente en inglés**, con el formato real (mayúsculas de énfasis BEST / NOT / CAN, opciones combinadas i-ii-iii, "Select TWO options").
    - **Explicaciones: en castellano.** No influye en el examen y acelera la asimilación.
    - **Registro de errores: en inglés**, porque lo que hay que reconocer el día del examen es el término.
+6. **El ejemplo, sobre una app real.** En las técnicas de caja negra (3.2-3.5) y en el informe de defectos (4.7), el ejemplo con el que se explica cada técnica se hace sobre Vikunja, la app de la suite de pruebas (`DaniLoBerr/vikunja-test-suite`): las particiones y los límites del título de un proyecto, la tabla de decisión de los permisos entre usuarios, los estados de una tarea. Las preguntas de práctica siguen siendo de examen y en inglés (regla 5), y la definición del syllabus sigue mandando (regla 3).
 
 ---
 
@@ -124,7 +125,7 @@ Si falta alguna, se arregla antes, aunque el contador diga 43.
 ---
 
 ## Fase 3 — Técnicas de prueba
-*Capítulo 4 → 11 preguntas, 5 de ellas K3. El capítulo que decide el examen.*
+*Capítulo 4 → 11 preguntas, 5 de ellas K3. El capítulo que decide el examen. El ejemplo de cada técnica de caja negra se hace sobre Vikunja (regla 6).*
 
 - [ ] **3.1** Panorama de técnicas — Caja negra, caja blanca y basadas en experiencia: en qué se basa cada familia y cuándo puede diseñarse
 - [ ] **3.2** Drill K3 — Particiones de equivalencia
@@ -213,3 +214,4 @@ A una tarea al día: **36 tareas pendientes**, unas 28 horas de estudio. Realist
 | Sesión 2 | **El repo es la única fuente de verdad** | Los documentos estaban duplicados como docs del proyecto y en el repo, y ya habían derivado |
 | Sesión 2 | Estado separado del plan (`ESTADO.md`) | Lo que cambia cada tarea pesa 4 KB; el plan entero, 16. Se lee lo que cambia |
 | Sesión 2 | **En el proyecto solo el syllabus** | Las búsquedas devolvían exámenes de muestra (incluidas sus respuestas), quemando el recurso antes de la fase 5 |
+| 2026-10-08 | El ejemplo de cada técnica, sobre Vikunja (regla 6) | Lo que se estudia aquí se usa al diseñar los casos de la suite de pruebas, y al revés: una sola historia en vez de dos. Las preguntas no cambian: siguen siendo de examen |
