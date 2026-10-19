@@ -1,14 +1,12 @@
 # CLAUDE.md
 
-Preparación de Dani (DaniLoBerr) para la certificación **ISTQB CTFL v4.0** (syllabus v4.0.1). **Este repositorio es la fuente única**: plan, estado, registro de errores, teoría y apuntes. Nada vive solo en una conversación.
+Preparación de Dani (DaniLoBerr) para la certificación **ISTQB CTFL v4.0** (syllabus v4.0.1). **Este repositorio es la fuente única**: plan, estado, registro de errores, teoría y apuntes.
+
+Las reglas comunes a todas las sesiones (idioma, cómo hablarle, git, privacidad) están en `~/central/reglas-comunes.md` y se cargan solas. Aquí solo va lo propio de este repo.
 
 ## Repo público — antes que nada
 
-**El repo es público** (`DaniLoBerr/istqb-ctfl-v4`). Lo que hay aquí es obra propia; el material oficial del ISTQB (syllabus, glosario, exámenes de muestra) tiene copyright y **no se sube**: `*.pdf` está en `.gitignore` y `istqb-ctfl-materials/` es solo local. Tampoco se pegan aquí enunciados literales de los exámenes de muestra ni del syllabus más allá de una cita corta: los apuntes son la idea con palabras propias. Nada de datos personales.
-
-## Economía de contexto
-
-Los documentos están partidos para no abrirlos enteros. **Abre el archivo concreto que responde la pregunta, nunca todos "por contexto".** Al editar, **haz parches sobre las líneas que cambian**; no reescribas un archivo entero para tocar tres líneas.
+**El repo es público** (`DaniLoBerr/istqb-ctfl-v4`). Lo que hay aquí es obra propia; el material oficial del ISTQB (syllabus, glosario, exámenes de muestra) tiene copyright y **no se sube**: `*.pdf` está en `.gitignore` y `istqb-ctfl-materials/` es solo local. Tampoco se pegan aquí enunciados literales de los exámenes de muestra ni del syllabus más allá de una cita corta: los apuntes son la idea con palabras propias.
 
 ## Qué hay y qué abrir
 
@@ -27,9 +25,8 @@ Los documentos están partidos para no abrirlos enteros. **Abre el archivo concr
 
 1. **Cada tarea del plan (`1.4`, `1.5`…) es una conversación propia.** Protocolo completo en `ESTADO.md`: leer estado → mini-test de recuperación → teoría → cuestionario → actualizar el repo antes de cerrar.
 2. **Al cerrar una tarea se actualiza:** `ESTADO.md` (estado actual, historial de resultados y, si hubo fallos, una fila en el registro de errores con su sección del syllabus y su categoría), la tarea marcada en `plan-istqb-ctfl-v4.md`, **la teoría de la tarea en su capítulo de `teoria/`** (y en `teoria/00-indice.md`), y la entrada en su capítulo de `apuntes/` (y en `apuntes/00-indice.md`) solo si surgió un concepto nuevo que costó.
-3. **Se trabaja directamente en `main`**: commit y `git push` al terminar cada cambio, sin pedir permiso. Un commit por cambio con sentido propio, mensaje en imperativo describiendo el cambio, no el archivo. Rama + PR solo para reestructuraciones grandes.
-4. Nunca: cambiar la visibilidad del repo, borrarlo, ni `push --force` (bloqueado en `.claude/settings.json`).
-5. Si un archivo que se consulta mucho crece demasiado (~20 KB), se parte por capítulo del syllabus con un `00-indice.md`, como ya se hizo con `apuntes/`. El siguiente candidato es el registro de errores de `ESTADO.md`. Se actualiza esta tabla.
+3. **Se trabaja directamente en `main`**: commit y `git push` al terminar cada cambio, sin pedir permiso. Rama + PR solo para reestructuraciones grandes.
+4. Si un archivo que se consulta mucho crece demasiado (~20 KB), se parte por capítulo del syllabus con un `00-indice.md`, como ya se hizo con `apuntes/`. El siguiente candidato es el registro de errores de `ESTADO.md`. Se actualiza esta tabla.
 
 ## Cómo quiere Dani las respuestas
 
@@ -38,4 +35,4 @@ Los documentos están partidos para no abrirlos enteros. **Abre el archivo concr
 - **La definición del syllabus manda sobre la experiencia práctica.** Los distractores se construyen sobre lo que suena razonable en el trabajo diario.
 - **Los exámenes de muestra no se tocan hasta la fase 5.** Son agotables.
 - Recuperación activa: preguntar y corregir, no volver a explicar lo que ya se sabe.
-- Al grano; sin resumir al final lo que ya se ha dicho.
+- Al grano.
