@@ -8,6 +8,8 @@ los conceptos que costaron, en [`apuntes/`](apuntes/00-indice.md), un archivo po
 
 ## Estado actual
 
+**En pausa desde el 2026-10-19 hasta cerrar el bloque 3 del roadmap.** Dani no conseguía sacarle tiempo en paralelo, y el roadmap pasa a una sola secuencia con el CTFL justo después del bloque 3 (`roadmap-personal-jobs`, `docs/roadmap/22-registro-de-cambios.md`). Al retomarlo, lo primero es un mini-test de recuperación de los capítulos 1 y 3, porque habrá pasado tiempo; después, la 1.6 donde quedó.
+
 **Capítulo 1 completo y consolidado.** Tarea 1.5 (Cap. 3 bloque A, fundamentos de pruebas estáticas): **8/8 (100%)**. Pleno, sin fallos nuevos.
 
 **Siguiente: tarea 1.6** — Cap. 3 bloque B, el proceso de revisión.
